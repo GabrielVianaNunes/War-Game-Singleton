@@ -1,19 +1,31 @@
 package war_singleton;
 
-class Player {
-    private String name;
-    private java.awt.Color color;
+import java.awt.Color;
 
-    public Player(String name, java.awt.Color color) {
+public class Player {
+    private String name;
+    private Color color;
+    private int armies;
+
+    public Player(String name, Color color, int armies) {
         this.name = name;
         this.color = color;
+        this.armies = armies;
     }
 
     public String getName() {
         return name;
     }
 
-    public java.awt.Color getColor() {
+    public Color getColor() {
         return color;
+    }
+
+    public int getArmies() {
+        return armies;
+    }
+
+    public void setArmies(int armies) {
+        this.armies = armies;
     }
 }

@@ -51,7 +51,7 @@ public class WarGame extends JFrame {
             } while (playerName == null || playerName.length() > 20 || playerName.trim().isEmpty() || playerNames.contains(playerName.trim()));
 
             playerNames.add(playerName.trim());
-            Player player = new Player(playerName.trim(), distinctColors[i]);
+            Player player = new Player(playerName.trim(), distinctColors[i], 3);
             players.add(player);
             playerColors.put(player.getName(), player.getColor());
         }
